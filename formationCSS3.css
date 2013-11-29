@@ -1,0 +1,198 @@
+/*
+				
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.======.\ ' J           
+                         "-.   "__"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..-=  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+		*********	       Good.. Good..            **********
+
+
+
+
+		*********	Now it's time to learn some CSS **********
+
+
+
+*/
+
+/* Selector */
+
+	/* Here we used ".box", this's a class selector, in html we used like this :
+		<div class="box">
+			..
+		</div>
+	*/
+	.row:nth-child(even) {
+	  background: white; 
+	}
+	.row:nth-child(odd) {
+	  background: black;
+	}
+
+	
+	/*
+				|||||||||||||||||||||||||||||||||||||||||||||
+		row1	||										   || ◄ this will be black
+				|||||||||||||||||||||||||||||||||||||||||||||
+		row2	||										   || ◄ this will be white
+				|||||||||||||||||||||||||||||||||||||||||||||
+		row2	||										   || ◄ this will be black
+				|||||||||||||||||||||||||||||||||||||||||||||
+	*/
+
+
+
+	/* styling specific inputs */
+
+	/* we can have:
+		<input type="password">
+		<input type="file">
+		<input type="submit">
+		and more ..
+	*/
+
+	input[type="text"] {
+  		background: #eee;
+	}
+
+/* Using Font */
+@font-face {
+  font-family: 'LeagueGothic';
+  src        : url(LeagueGothic.otf);
+}
+
+@font-face {
+  font-family: 'Droid Sans';
+  src        : url(Droid_Sans.ttf);
+}
+
+header {
+  font-family: 'LeagueGothic';
+}
+
+/* Background opacity */
+div{
+	color     : rgba(255, 0, 0, 0.75); 
+  	background: rgba(0, 0, 255, 0.75);
+}
+
+/* Transition */
+
+/* Here we used "#box", this's a id selector, in html we used like this :
+		<div id="box">
+			..
+		</div>
+*/
+
+#box {
+  transition: color 1s;
+}
+
+/* Transform */
+#box2{
+	-webkit-transform: rotateY(45deg);
+}
+
+/* Animations */
+@-webkit-keyframes pulse {
+ from {
+   opacity  : 0.0;
+   font-size: 100%;
+ }
+ to {
+   opacity  : 1.0;
+   font-size: 200%;
+ }
+}
+
+div{
+  -webkit-animation-name           : pulse;
+  -webkit-animation-duration       : 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction      : alternate;
+}
+
+
+
+
+
+/*
+				
+                               ____                  
+                            _.' :  `._               
+                        .-.'`.  ;   .'`.-.           
+               __      / : ___\ ;  /___ ; \      __  
+             ,'_ ""=-.:__;".-.";: :".-.":__;.-="" _`,
+             :' `.t""=-.. '<@.`;_  ',@:` ..-=""j.' `;
+                  `:-.._J '-.-'L__ `-.-' L_..-;'     
+                    "-.__ ;  .-"  "-.  : __.-"       
+                        L ' /.======.\ ' J           
+                         "-.   "__"   .-"            
+                        __.l"-:_JL_;-";.__           
+                     .-j/'.;  ;""""  / .'\"-.        
+                   .' /:`. "-.:     .-" .';  `.      
+                .-"  / ;  "-. "-..-" .-"  :    "-.   
+             .+"-.  : :      "-.__.-"      ;-._   \  
+             ; \  `.; ;                    : : "+. ; 
+             :  ;   ; ;                    : ;  : \: 
+             ;  :   ; :                    ;:   ;  : 
+            : \  ;  :  ;                  : ;  /  :: 
+            ;  ; :   ; :                  ;   :   ;: 
+            :  :  ;  :  ;                : :  ;  : ; 
+            ;\    :   ; :                ; ;     ; ; 
+            : `."-;   :  ;              :  ;    /  ; 
+             ;    -:   ; :              ;  : .-"   : 
+             :\     \  :  ;            : \.-"      : 
+              ;`.    \  ; :            ;.'_..-=  / ; 
+              :  "-.  "-:  ;          :/."      .'  :
+               \         \ :          ;/  __        :
+                \       .-`.\        /t-""  ":-+.   :
+                 `.  .-"    `l    __/ /`. :  ; ; \  ;
+                   \   .-" .-"-.-"  .' .'j \  /   ;/ 
+                    \ / .-"   /.     .'.' ;_:'    ;  
+                     :-""-.`./-.'     /    `.___.'   
+                           \ `t  ._  /               
+                            "-.t-._:'                
+
+		*********	   Now my son You're a master     **********
+
+
+
+
+		*** See you next week to learn some game devlopment ****
+
+
+
+*/

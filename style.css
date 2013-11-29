@@ -1,0 +1,33 @@
+body{
+	background-color: blue;
+	color:white;
+	font-size: 25px;
+	padding: 10px;
+	overflow-x: hidden;
+}
+
+
+.hello{
+	border:solid 2px white;
+	padding:10px 7px 10px 7px; /* top right bottom left */
+	margin:30px;
+	width:250px;
+	/* display: inline-block; */
+	float: left;
+}
+
+.hello:hover{
+	background-color: white;
+	color:black;
+	cursor: pointer;
+}
+
+#holder{
+	width:300%;
+
+}
+
+
+
+
+
